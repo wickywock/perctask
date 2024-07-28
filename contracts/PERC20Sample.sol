@@ -7,8 +7,7 @@ import "./PERC20.sol";
  * @dev Sample implementation of the {PERC20} contract.
  */
 contract PERC20Sample is PERC20 {
-    constructor() PERC20("IZYY", "pIZZY") {}
-
+    constructor() PERC20("ZUOBAI", "ZB") {}
     /// @dev Wraps SWTR to PSWTR.
     receive() external payable {
         _mint(_msgSender(), msg.value);
